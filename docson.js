@@ -18,8 +18,9 @@ var docson = docson || {};
 
 docson.templateBaseUrl="templates";
 
-define(["lib/jquery", "lib/handlebars", "lib/highlight", "lib/jsonpointer", "lib/marked", "lib/traverse"], function(jquery, handlebars, highlight, jsonpointer, marked) {
-
+define(["./lib/jquery", "./lib/handlebars", "./lib/highlight", "./lib/jsonpointer", "./lib/marked", "./lib/traverse"], function(jquery, Handlebars, highlight, jsonpointer, marked, traverse) {
+    console.log(Handlebars);
+    var $ = jquery;
     var ready = $.Deferred();
     var boxTemplate;
     var signatureTemplate;
